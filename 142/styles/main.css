@@ -1,37 +1,204 @@
+@import url(../fonts/stylesheet.css);
 header {
   background: #2F3132;
   height: 100px;
 }
-
-.wrapper {
-  width: 1280px;
+header .wrapper-header {
+  width: 1157px;
   margin: 0 auto;
 }
-
-.header-position {
+header .header-position {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-nav {
-  width: 860px;
+header nav {
+  width: 680px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-nav a {
+header nav a {
+  font-family: "robotomedium";
+  text-transform: uppercase;
   font-size: 12px;
   padding: 7px 0;
   color: #fff;
   text-decoration: none;
 }
-nav a:hover {
+header nav a:hover {
   border-bottom: 1px solid #fff;
+  transition-duration: 0.3s;
   transition-delay: 0.2s;
 }
-nav span {
+header nav span {
   color: #494949;
   font-size: 30px;
+}
+
+main .top {
+  background: #e0e1e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+main .top h3 {
+  position: absolute;
+  top: 70px;
+}
+main .top p {
+  margin: 8px;
+}
+main .top a {
+  margin: 49px 0 60px 0;
+}
+main h3 {
+  font-family: "robotoblack";
+  top: 100px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+main p {
+  font-family: "robotoregular";
+  font-size: 20px;
+  width: 760px;
+  text-align: center;
+}
+main #wireless {
+  height: 800px;
+  padding: 70px;
+  background: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #wireless i {
+  color: #c4c4c4;
+  font-size: 40px;
+}
+main #wireless h3 {
+  margin: 35px 0 0 0;
+}
+main #wireless .bgt {
+  margin: 60px auto 0 auto;
+  position: relative;
+  top: -70px;
+  left: -230px;
+}
+main #wireless .bgt span {
+  position: absolute;
+  font-family: "robotoblack";
+  color: #c4c4c4;
+}
+main #wireless .bgt span:first-child {
+  font-size: 290px;
+}
+main #wireless .bgt span:last-child {
+  top: 65px;
+  left: 330px;
+  font-size: 90px;
+}
+main #wireless div:last-child {
+  margin: 74px 0 0 0;
+  width: 1245px;
+  display: flex;
+  justify-content: space-between;
+}
+main #everywhere {
+  padding: 100px 0;
+  height: 1157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #everywhere h3 {
+  margin: 0;
+}
+main #everywhere p {
+  margin: 35px 0 0 0;
+}
+main #everywhere .advantages {
+  margin: 50px auto;
+  width: 505px;
+  display: flex;
+  justify-content: space-between;
+}
+main #everywhere .advantages div {
+  width: 230px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+main #everywhere .advantages div h3 {
+  margin: 0;
+}
+main #everywhere .advantages div p {
+  margin: 0;
+  max-width: 100%;
+}
+main #everywhere .options {
+  width: 1280px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #everywhere .options h3 {
+  font-size: 20px;
+  margin: 40px auto 15px auto;
+}
+main #everywhere .options div {
+  width: 405px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #everywhere .options div ul {
+  width: 320px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+main #everywhere .options div li {
+  list-style: none;
+}
+main #everywhere .options div li img {
+  border-radius: 50%;
+}
+main #everywhere .options div button {
+  font-size: 30px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+main #devices {
+  background: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 1332px;
+}
+main #devices img {
+  position: absolute;
+}
+main #devices h3 {
+  margin: 100px auto 0 auto;
+  z-index: 1;
+}
+main #devices p {
+  z-index: 1;
+  margin: 35px 0 0 0;
+}
+main #devices p:last-child {
+  margin: 30px 0 0 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,40 +1,252 @@
+@import url(../fonts/stylesheet.css);
+
+$mainGray: #ededed;
+$regularFontSize: 20px;
+$titleFontSize: 36px;
+$links: 'robotomedium';
+$txts: 'robotoregular';
+$titles: 'robotoblack';
+
+
 header {
     background: #2F3132;
     height: 100px;
+
+    .wrapper-header {
+        width: 1157px;
+        margin: 0 auto;
+    }
+    
+    .header-position {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav {
+        width: 680px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        a {
+            font-family: 'robotomedium';
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 7px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            border-bottom: 1px solid #fff;
+            transition-duration: 0.3s;
+            transition-delay: 0.2s;
+        }
+    
+        span {
+            color: #494949;
+            font-size: 30px;
+        }
+    }
 }
 
-.wrapper {
-    width: 1280px;
-    margin: 0 auto;
-}
+main {
+    .top {
+        background: #e0e1e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        padding: 20px;
 
-.header-position {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        h3 {
+            position: absolute;
+            top: 70px;
+        }
 
-nav {
-    width: 860px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        p {
+            margin: 8px;
+        }
 
-    a {
-        font-size: 12px;
-        padding: 7px 0;
-        color: #fff;
-        text-decoration: none;
+        a {
+            margin: 49px 0 60px 0;
+        }
     }
 
-    a:hover {
-        border-bottom: 1px solid #fff;
-        transition-delay: 0.2s;
+    h3 {
+        font-family: $titles;
+        top: 100px;
+        font-size: 36px;
+        text-transform: uppercase;
     }
 
-    span {
-        color: #494949;
-        font-size: 30px;
+    p {
+        font-family: $txts;
+        font-size: 20px;
+        width: 760px;
+        text-align: center;
+    }
+
+    #wireless {
+        height: 800px;
+        padding: 70px;
+        background: $mainGray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            color: #c4c4c4;
+            font-size: 40px;
+        }
+
+        h3 {
+            margin: 35px 0 0 0;
+        }
+
+        .bgt {
+            margin: 60px auto 0 auto;
+            position: relative;
+            top: -70px;
+            left: -230px;
+
+            span {
+                position: absolute;
+                font-family: $titles;
+                color: #c4c4c4;
+            }
+
+            span:first-child {
+                font-size: 290px;
+            }
+
+            span:last-child {
+                top: 65px;
+                left: 330px;
+                font-size: 90px;
+            }
+        }
+        div:last-child {
+            margin: 74px 0 0 0;
+            width: 1245px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    #everywhere {
+        padding: 100px 0;
+        height: 1157px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 35px 0 0 0;
+        }
+
+        .advantages {
+            margin: 50px auto;
+            width: 505px;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 230px;
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #000;
+
+                h3 {
+                    margin: 0;
+                }
+                
+                p {
+                    margin: 0;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .options {
+            width: 1280px;
+            height: 690px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 20px;
+                margin: 40px auto 15px auto;
+            }
+            
+            div {
+                width: 405px;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ul {
+                    width: 320px;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+                li {
+                    list-style: none;
+                    
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                button {
+                    font-size: 30px;
+                    border: none;
+                    background: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    #devices {
+        background: $mainGray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 1332px;
+
+        img {
+            position: absolute;
+        }
+
+        h3 {
+            margin: 100px auto 0 auto;
+            z-index: 1;
+        }
+
+        p {
+            z-index: 1;
+            margin: 35px 0 0 0;
+        }
+
+        p:last-child {
+            margin: 30px 0 0 0;
+        }
     }
 }

@@ -4,28 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/pmg">
     <title>Logitech</title>
 </head>
 <body>
     <header>
-        <div class="wrapper header-position">
+        <div class="header-size wrapper-header header-position">
             <img src="img/Logo_Logitech 1.png" alt="Logitech">
             <nav class="nav">
-                <a class="link" href="#">Work wirelessly</a>
+                <a class="link" href="#wireless">Work wirelessly</a>
                 <span>|</span>
-                <a class="link" href="#">Everywhere</a>
+                <a class="link" href="#everywhere">Everywhere</a>
                 <span>|</span>
-                <a class="link" href="#">Comfort</a>
-                <span>|</span>
-                <a class="link" href="#">Different devices</a>
+                <a class="link" href="#devices">Different devices</a>
                 <span>|</span>
                 <a class="link" href="#">Faster</a>
             </nav>
         </div>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <main>
+        <section class="top">
+            <h3>Work more productively</h3>
+            <img src="img/MX-Master 1.png" alt="MX Master">
+            <p>Designed for efficient work, programming and creativity</p>
+            <a href="#wireless"><img src="img/arrow.svg" alt="Down"></a>
+        </section>
+        <section id="wireless">
+            <i class="fa-brands fa-bluetooth-b"></i>
+            <h3>wireless</h3>
+            <p>The MX Master 3 wireless mouse works wirelessly for up to several months. You will close the priority tasks before you need to recharge.</p>
+            <div class="bgt">
+                <span>70</span>
+                <span>days</span>
+            </div>
+            <div>
+                <img src="img/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1.png" alt="MX Master">
+                <img src="img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png" alt="MX Master">
+            </div>
+        </section>
+        <section id="everywhere">
+            <h3>behind any table</h3>
+            <p>Explore the landscapes of your home without being distracted from work. The MX Master 3 is compact enough to change your workplace and take your laptop to the kitchen.</p>
+            <div class="advantages">
+                <div>
+                    <h3>5 times</h3>
+                    <p>more accurate than predecessors</p>
+                </div>
+                <div>
+                    <h3>4000</h3>
+                    <p>dpi sensor sensitivity</p>
+                </div>
+            </div>
+            <section class="options">
+                <img src="img/wood.png" alt="Texture" id="active-texture">
+                <h3>Switch surface</h3>
+                <div>
+                    <button id="previous"><i class="fa-solid fa-chevron-left"></i></button>
+                    <ul>
+                        <li><img src="img/wood-texture.png" alt="Texture"></li>
+                        <li><img src="img/glass-texture.png" alt="Texture"></li>
+                        <li><img src="img/linoleum-texture.png" alt="Texture"></li>
+                        <li><img src="img/cloth-texture.png" alt="Texture"></li>
+                        <li><img src="img/marble-texture.png" alt="Texture"></li>
+                    </ul>
+                    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <P>Thanks to Logitech Darkfield technology, the MX Master 3 works on any surface, even glass.</P>
+            </section>
+        </section>
+        <section id="devices">
+            <img src="img/High_Resolution_JPG-MX Lifestyle 2346 1.png" alt="IMG">
+            <h3>SIMULTANEOUSLY FROM MULTIPLE DEVICES</h3>
+            <p>With Flow technology, you can work on multiple computers simultaneously, instantly switching between different operating systems — even between Windows® and macOS. For example, it is enough to copy a text, image, or file to a MacBook and move it to a Windows PC without delay.</p>
+            <p>The MX Key keyboard tracks the movement of the MX Master 3 mouse cursor, so that your text appears where you are currently working.</p>
+        </section>
+    </main>
+    <script src="script/main.js"></script>
 </body>
 </html>
