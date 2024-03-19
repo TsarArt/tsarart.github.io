@@ -32,9 +32,10 @@ header nav a:hover {
   transition-duration: 0.3s;
   transition-delay: 0.2s;
 }
-header nav span {
-  color: #494949;
-  font-size: 30px;
+header nav div {
+  background: #494949;
+  height: 35px;
+  width: 1px;
 }
 
 main .top {
@@ -86,7 +87,7 @@ main #wireless h3 {
 main #wireless .bgt {
   margin: 60px auto 0 auto;
   position: relative;
-  top: -70px;
+  top: -60px;
   left: -230px;
 }
 main #wireless .bgt span {
@@ -98,7 +99,7 @@ main #wireless .bgt span:first-child {
   font-size: 290px;
 }
 main #wireless .bgt span:last-child {
-  top: 65px;
+  top: 55px;
   left: 330px;
   font-size: 90px;
 }
@@ -173,6 +174,9 @@ main #everywhere .options div li {
 main #everywhere .options div li img {
   border-radius: 50%;
 }
+main #everywhere .options div li .active {
+  border: 2px solid red;
+}
 main #everywhere .options div button {
   font-size: 30px;
   border: none;
@@ -181,24 +185,129 @@ main #everywhere .options div button {
   margin: 0;
 }
 main #devices {
-  background: #ededed;
+  background: #ededed center no-repeat url(../img/High_Resolution_JPG-MX\ Lifestyle\ 2346\ 1.png);
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   height: 1332px;
 }
-main #devices img {
-  position: absolute;
-}
 main #devices h3 {
-  margin: 100px auto 0 auto;
-  z-index: 1;
+  margin: 100px auto 10px auto;
 }
 main #devices p {
-  z-index: 1;
-  margin: 35px 0 0 0;
+  margin: 25px 0 0 0;
+  width: 960px;
 }
-main #devices p:last-child {
-  margin: 30px 0 0 0;
+main #devices .how-to-use {
+  margin: 60px auto;
+  padding: 0;
+  height: 60px;
+  width: 960px;
+  font-size: 20px;
+  font-family: "robotoregular";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #devices .how-to-use span {
+  width: 315px;
+  text-align: center;
+  position: relative;
+}
+main #devices .how-to-use span:last-child {
+  width: 150px;
+}
+main #devices .how-to-use div {
+  background: #494949;
+  width: 1px;
+  height: 60px;
+}
+main #individual {
+  background: #ededed;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #individual h3 {
+  margin: 0;
+}
+main #individual p {
+  width: 958px;
+  text-align: center;
+  margin: 38px auto 52px auto;
+}
+main #individual img {
+  width: 1171px;
+}
+main #individual div {
+  margin: 52px 0 0 0;
+  padding: 38px 0 29px 0;
+  width: 749px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4c4c4;
+}
+main #individual div .icons {
+  width: 512px;
+  display: flex;
+  justify-content: space-between;
+}
+main #individual div .icons img {
+  width: 40px;
+  height: 35px;
+}
+main #individual div .icons img:nth-child(3) {
+  width: 80px;
+}
+main #individual div p {
+  margin: 25px 0 0 0;
+  text-align: center;
+  width: 700px;
+}
+main #faster {
+  margin: 0 auto;
+  padding: 100px;
+  width: 1310px;
+  display: grid;
+  grid-template-rows: 557px 557px;
+}
+main #faster div {
+  display: grid;
+  grid-template-columns: 655px 655px;
+}
+main #faster div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+main #faster div div h3 {
+  margin: 0;
+}
+main #faster .comfort div h3, main #faster .comfort div p {
+  width: 400px;
+  text-align: left;
+}
+main #faster .faster div {
+  display: flex;
+  align-items: end;
+}
+main #faster .faster div h3, main #faster .faster div p {
+  width: 400px;
+  text-align: right;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2F3132;
+}
+footer p {
+  width: 200px;
+  color: #c7c8c8;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
